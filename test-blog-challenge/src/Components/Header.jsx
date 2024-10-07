@@ -15,7 +15,7 @@ export default function Header() {
           
             <Link
               to="/"
-              className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white bg-gradient-to-r from-orange-700 via-white to-green-700 p-2 rounded-lg shadow-lg shadow-gray-700"
+              className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white bg-gradient-to-r from-orange-700 via-white to-green-700 p-2 rounded-lg"
             >
               My Modern Blog
             </Link>
@@ -38,15 +38,15 @@ export default function Header() {
         <div className="flex gap-2 md:order-2">
           {/* SignIn Button */}
           <Link to="/sign-in">
-            <Button gradientMonochrome="success">Se connecter</Button>
+            <Button gradientMonochrome="success" outline>Se connecter</Button>
           </Link>
           <Navbar.Toggle />
         </div>
 
         {/* Navbar Links */}
         <Navbar.Collapse>
-          <Navbar.Link active={path === "/"} href="/">Home</Navbar.Link>
-          <Navbar.Link active={path === "/about"} href="/about">About</Navbar.Link>
+          <Navbar.Link active={path === "/"} href="/">Accueil</Navbar.Link>
+          <Navbar.Link active={path === "/about"} href="/about">A propos</Navbar.Link>
         </Navbar.Collapse>
 
     </Navbar>
